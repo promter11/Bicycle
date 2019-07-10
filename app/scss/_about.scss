@@ -1,0 +1,22 @@
+.about-section {
+    display: grid;
+    justify-items: center;
+    
+    padding: 118px 0 144px 0;
+
+    text-align: center;
+
+    background-color: $lightgrey-color;
+
+    &__image,
+    &__title {
+        margin-bottom: 34px;
+    }
+
+    &__description {
+        font-size: 18px;
+        line-height: 1.9;
+
+        max-width: 1080px;
+    }
+}

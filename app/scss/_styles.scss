@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato Regular';
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+p {
+    color: $grey-color;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li,
+a {
+    text-decoration: none;
+}
+
+a {
+    outline: none;
+
+    color: $list-link-color;
+}

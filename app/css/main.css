@@ -1,0 +1,337 @@
+@font-face {
+  font-family: 'Lato Regular';
+  src: url("../fonts/Lato/Lato-Regular.eot");
+  src: url("../fonts/Lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato/Lato-Regular.woff") format("woff"), url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato Regular';
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+p {
+  color: #848789;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li,
+a {
+  text-decoration: none;
+}
+
+a {
+  outline: none;
+  color: #4d4959;
+}
+
+.header-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 9fr;
+  grid-template-areas: "header-nav";
+  justify-items: center;
+  max-height: 800px;
+  padding-top: 35px;
+  background: url(../img/header-bg.png) no-repeat top center/cover;
+}
+
+.header-section-nav {
+  grid-area: header-nav;
+}
+
+.header-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 620px;
+}
+
+.header-list__item {
+  text-transform: uppercase;
+}
+
+.header-list__item:first-child:after {
+  content: '.';
+  position: relative;
+  top: 0;
+  left: 30px;
+}
+
+.header-list__item:nth-child(4):after {
+  content: '.';
+  position: relative;
+  top: 0;
+  left: 30px;
+}
+
+.header-list__link {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: bold;
+  letter-spacing: 3px;
+  -webkit-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out;
+}
+
+.header-list__link:hover {
+  color: #000;
+}
+
+.about-section {
+  display: grid;
+  justify-items: center;
+  padding: 118px 0 144px 0;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.about-section__image, .about-section__title {
+  margin-bottom: 34px;
+}
+
+.about-section__description {
+  font-size: 18px;
+  line-height: 1.9;
+  max-width: 1080px;
+}
+
+.work-section {
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "a a b" "a a c" "d f f" "e f f" "g h j" "g i j";
+}
+
+.work-section-img-1 {
+  position: relative;
+  grid-area: a;
+}
+
+.work-section-img-1:after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  bottom: 0;
+  right: 0;
+  background: url(../img/bicycle-company-icon.png) no-repeat;
+}
+
+.work-section-vintage-oliva {
+  grid-area: b;
+  max-height: 400px;
+}
+
+.work-section-img-2 {
+  position: relative;
+  grid-area: c;
+}
+
+.work-section-img-2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #fff;
+}
+
+.work-section-la-boriosa {
+  grid-area: d;
+}
+
+.work-section-img-3 {
+  position: relative;
+  grid-area: e;
+}
+
+.work-section-img-3:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #fff;
+}
+
+.work-section-img-4 {
+  position: relative;
+  grid-area: f;
+}
+
+.work-section-img-4:after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  bottom: 0;
+  right: 0;
+  background: url(../img/vintage-icon.png) no-repeat;
+}
+
+.work-section-img-5 {
+  position: relative;
+  grid-area: g;
+}
+
+.work-section-img-5:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  bottom: 0;
+  right: 0;
+  background: url(../img/bicycles-icon.png) no-repeat;
+}
+
+.work-section-retro-bike {
+  grid-area: h;
+}
+
+.work-section-img-6 {
+  position: relative;
+  grid-area: i;
+}
+
+.work-section-img-6:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #fff;
+}
+
+.work-section-img-7 {
+  grid-area: j;
+}
+
+.work-section-information-block {
+  padding: 70px 68px 0 68px;
+  text-align: center;
+}
+
+.work-section-information-block__image {
+  margin-bottom: 32px;
+}
+
+.work-section-information-block__title {
+  margin-bottom: 32px;
+}
+
+.work-section-information-block__description {
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: justify;
+  margin-bottom: 42px;
+}
+
+.work-section-information-block__line {
+  width: 50px;
+  height: 2px;
+  margin: 0 auto 50px auto;
+  background-color: #d7d7d7;
+}
+
+.work-section__image {
+  width: 100%;
+  height: 100%;
+}
+
+.review-section {
+  display: grid;
+  justify-items: center;
+  padding: 124px 0 70px 0;
+  text-align: center;
+}
+
+.review-block__image {
+  margin-bottom: 38px;
+}
+
+.review-block__title {
+  margin-bottom: 30px;
+  text-transform: initial;
+}
+
+.review-block__title--additional {
+  font-weight: normal;
+  color: #848789;
+}
+
+.review-block__description {
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1.4;
+  max-width: 1080px;
+}
+
+.review-square-block {
+  width: 51px;
+  height: 11px;
+  margin-top: 104px;
+}
+
+.review-square-block__square {
+  display: inline-grid;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #848789;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.review-square-block__square:first-child {
+  background-color: #848789;
+}
+
+.review-square-block__square:hover {
+  background-color: #848789;
+}

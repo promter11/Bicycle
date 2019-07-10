@@ -1,0 +1,62 @@
+.review-section {
+    display: grid;
+    justify-items: center;
+
+    padding: 124px 0 70px 0;
+
+    text-align: center;
+}
+
+.review-block {
+
+    &__image {
+        margin-bottom: 38px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+
+        text-transform: initial;
+
+        &--additional {
+            font-weight: normal;
+
+            color: $grey-color;
+        }
+    }
+
+    &__description {
+        font-size: 24px;
+        font-style: italic;
+        line-height: 1.4;
+
+        max-width: 1080px;
+    }
+}
+
+.review-square-block {
+    width: 51px;
+    height: 11px;
+
+    margin-top: 104px;
+
+    &__square {
+        display: inline-grid;
+
+        width: 11px;
+        height: 11px;
+
+        border: 1px solid $grey-color;
+        border-radius: 50%;
+
+        cursor: pointer;
+
+        &:first-child {
+            background-color: $grey-color;
+        }
+
+        &:hover {
+            background-color: $grey-color;
+        }
+    }
+}

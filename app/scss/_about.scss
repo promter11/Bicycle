@@ -13,10 +13,15 @@
         margin-bottom: 34px;
     }
 
+    &__image {
+        width: auto;
+        height: auto;
+    }
+
     &__description {
+        max-width: 1080px;
+
         font-size: 18px;
         line-height: 1.9;
-
-        max-width: 1080px;
     }
 }

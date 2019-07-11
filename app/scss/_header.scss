@@ -17,34 +17,36 @@
 }
 
 .header-list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    justify-items: center;
     align-items: center;
-
-    width: 620px;
 
     &__item {
         text-transform: uppercase;
 
         &:first-child {
+            position: relative;
 
             &:after {
                 content: '.';
 
-                position: relative;
+                position: absolute;
                 top: 0;
-                left: 30px;
+                right: -30px;
             }
         }
 
         &:nth-child(4) {
+            position: relative;
 
             &:after {
                 content: '.';
 
-                position: relative;
+                position: absolute;
                 top: 0;
-                left: 30px;
+                right: -30px;
             }
         }
     }

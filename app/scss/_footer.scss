@@ -1,12 +1,4 @@
 .footer-section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "address social .";
-    justify-items: center;
-    align-items: center;
-
-    padding: 102px 0;
-
     background-color: $lightgrey-color;
 
     &-address {

@@ -4,12 +4,7 @@
     margin: 0 auto;
 
     &-items {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-areas:    "a b d e f f"
-                                "c c d e g h";
-
+        
         &-img-1,
         &-img-2,
         &-img-3,
@@ -25,53 +20,43 @@
         }
         
         &-img-1 {
-            grid-area: a;
-
             background: url(../img/bicycle-img-8.png) no-repeat;
+            background-size: 100% 100%;
         }
 
         &-img-2 {
-            grid-area: b;
-
             background: url(../img/bicycle-img-9.png) no-repeat;
+            background-size: 100% 100%;
         }
 
         &-img-3 {
-            grid-area: c;
-
             background: url(../img/bicycle-img-10.png) no-repeat;
+            background-size: 100% 100%;
         }
 
         &-img-4 {
-            grid-area: d;
-
-            
-
             background: url(../img/bicycle-img-11.png) no-repeat;
+            background-size: 100% 100%;
         }
 
         &-img-5 {
-            grid-area: e;
-
             background: url(../img/bicycle-img-12.png) no-repeat;
+            background-size: 100% 100%;
         }
 
         &-img-6 {
-            grid-area: f;
-
             background: url(../img/bicycle-img-13.png) no-repeat;
+            background-size: 100% 100%;
         }
 
         &-img-7 {
-            grid-area: g;
-
             background: url(../img/bicycle-img-14.png) no-repeat;
+            background-size: 100% 100%;
         }
 
         &-img-8 {
-            grid-area: h;
-
             background: url(../img/bicycle-img-15.png) no-repeat;
+            background-size: 100% 100%;
         }
 
         &-img {

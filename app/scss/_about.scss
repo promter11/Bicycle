@@ -1,8 +1,6 @@
 .about-section {
     display: grid;
     justify-items: center;
-    
-    padding: 118px 0 144px 0;
 
     text-align: center;
 
@@ -14,14 +12,12 @@
     }
 
     &__image {
-        width: auto;
         height: auto;
     }
 
     &__description {
         max-width: 1080px;
-
-        font-size: 18px;
+        
         line-height: 1.9;
     }
 }

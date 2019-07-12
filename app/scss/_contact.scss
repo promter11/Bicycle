@@ -43,6 +43,8 @@
             &[type="text"]:-ms-input-placeholder {color: $input-color;}
             &[type="text"]::-ms-input-placeholder {color: $input-color;}
             &[type="text"]::placeholder {color: $input-color;}
+
+            outline: none;
         }
 
         &__btn {

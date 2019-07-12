@@ -10,42 +10,116 @@
         grid-template-areas:    "a b d e f f"
                                 "c c d e g h";
 
-        &__image-1 {
-            grid-area: a;
-
+        &-img-1,
+        &-img-2,
+        &-img-3,
+        &-img-6,
+        &-img-7,
+        &-img-8 {
             height: 267px;
         }
 
-        &__image-2 {
+        &-img-4,
+        &-img-5 {
+            height: 534px;
+        }
+        
+        &-img-1 {
+            grid-area: a;
+
+            background: url(../img/bicycle-img-8.png) no-repeat;
+        }
+
+        &-img-2 {
             grid-area: b;
+
+            background: url(../img/bicycle-img-9.png) no-repeat;
         }
 
-        &__image-3 {
+        &-img-3 {
             grid-area: c;
+
+            background: url(../img/bicycle-img-10.png) no-repeat;
         }
 
-        &__image-4 {
+        &-img-4 {
             grid-area: d;
+
+            
+
+            background: url(../img/bicycle-img-11.png) no-repeat;
         }
 
-        &__image-5 {
+        &-img-5 {
             grid-area: e;
+
+            background: url(../img/bicycle-img-12.png) no-repeat;
         }
 
-        &__image-6 {
+        &-img-6 {
             grid-area: f;
+
+            background: url(../img/bicycle-img-13.png) no-repeat;
         }
 
-        &__image-7 {
+        &-img-7 {
             grid-area: g;
+
+            background: url(../img/bicycle-img-14.png) no-repeat;
         }
 
-        &__image-8 {
+        &-img-8 {
             grid-area: h;
+
+            background: url(../img/bicycle-img-15.png) no-repeat;
         }
 
-        &__image {
-            max-width: 100%;
+        &-img {
+            position: relative;
+
+            transition: background-color .25s ease-in-out;
+
+            &:hover {
+                background-blend-mode: multiply;
+                background-color: $brand-color;
+
+                .shop-section-items-img-wrapper {
+                    display: block;
+                }
+            }
+
+            &-wrapper {
+                display: none;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+
+                width: 100%;
+
+                transform: translate(-50%, -50%);
+
+                text-align: center;
+
+                &__image {
+                    width: 51px;
+                    height: 30px;
+
+                    margin: 0 auto 10px auto;
+
+                    background: url(../img/bicycle-icon.png) no-repeat;
+                }
+
+                &__text {
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 1.2;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+
+                    color: #fff;
+                }
+            }
         }
     }
 

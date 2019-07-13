@@ -245,9 +245,6 @@ img {
   .about-section__title, .about-section__description {
     font-size: 18px;
   }
-  .review-section .review-block {
-    padding: 0;
-  }
   .review-section .review-block__title {
     font-size: 18px;
   }
@@ -462,6 +459,10 @@ img {
   text-align: center;
 }
 
+.review-block {
+  display: none;
+}
+
 .review-block__image {
   margin-bottom: 38px;
 }
@@ -482,6 +483,10 @@ img {
   max-width: 1080px;
 }
 
+.active-block {
+  display: block;
+}
+
 .review-square-block {
   width: 51px;
   height: 11px;
@@ -498,10 +503,6 @@ img {
 }
 
 .review-square-block__square:first-child {
-  background-color: #848789;
-}
-
-.review-square-block__square:hover {
   background-color: #848789;
 }
 

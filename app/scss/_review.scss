@@ -8,6 +8,7 @@
 }
 
 .review-block {
+    display: none;
 
     &__image {
         margin-bottom: 38px;
@@ -33,6 +34,10 @@
     }
 }
 
+.active-block {
+    display: block;
+}
+
 .review-square-block {
     width: 51px;
     height: 11px;
@@ -51,10 +56,6 @@
         cursor: pointer;
 
         &:first-child {
-            background-color: $grey-color;
-        }
-
-        &:hover {
             background-color: $grey-color;
         }
     }
